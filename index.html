@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="author" content="Julian Kiesewetter">
     <meta name="description" content="EindProject WebMarkup">
@@ -12,56 +14,53 @@
 
 </head>
 
-<body>
+<body class="BodyFlex">
 
-    <header>
+    <header class="indexHeader">
+
         <img src="img/gabbroFlav.jpg" alt="Gabbro on giants deep playing a flute" title="FluteNoises" id="Logo">
         <h1> Gabbro Technologies </h1>
         <h2>Looking amazing</h2>
-
-        <!--Phone Hamburger Menu, still needs to be done-->
-        <nav id="phoneNav">
-            <label>
-                <input type="checkbox">
-
-                <span class=menu> <span class="hamburger" /></span>
-
-
-                <ul class="hambugerNav">
-                    <li> <a href="product.html"> Product </a> </li>
-                    <li> <a href="pricing.html"> Pricing </a> </li>
-                    <li> <a href="contact.html"> Contact </a> </li>
-                </ul>
-            </label>
-        </nav>
-
-        <!--PC and Tablet navigation-->
-        <nav id="pcTabletNav">
-            <ul>
-                <li> <a href="product.html"> Product </a> </li>
-                <li> <a href="pricing.html"> Pricing </a> </li>
-                <li> <a href="contact.html"> Contact </a> </li>
-            </ul>
-        </nav>
     </header>
 
-    <!--Video-->
-    <video id="promotionVideo" controls>
+    <!-- phone hamburger (1) -->
+    <nav id="flexSmallNav">
+        <label>
+            <input type="checkbox">
+            <span class="square"> <span class="button"></span> </span>
+            <ul class=menu>
+                <li> <a id=menu href="product.html">Product</a> </li>
+                <li> <a id=menu href="pricing.html">Pricing</a> </li>
+                <li> <a id=menu href="contact.html">Contact</a> </li>
+            </ul>
+        </label>
+    </nav>
+
+    <!-- Large screen Nav (1)-->
+    <nav id="flexLargeNav">
+        <label>
+            <ul class=menuBig>
+                <li> <a id=menu href="product.html">Product</a> </li>
+                <li> <a id=menu href="pricing.html">Pricing</a> </li>
+                <li> <a id=menu href="contact.html">Contact</a> </li>
+            </ul>
+        </label>
+    </nav>
+
+
+    <!--Video (2)-->
+    <video id="promotionVideo" muted autoplay loop>
         <source src="mov/video.mp4" type="video/mp4">
         <source src="mov/video.ogg" type="video/ogg">
     </video>
 
-
-    <!--Information-->
-    <header>
-        Sport Technologies
+    <!--Articles (3)-->
+    <header class="IntroductionFlex">
+        <h2> Sport Technologies </h2>
+        <p> Here you can find 3 examples of pretty recent things that have changed sports in a certain way. </p>
     </header>
 
-    <p>
-        Under here you can find 3 examples of pretty recent things that have changed sports in a certain way.
-    </p>
-
-    <section class="flexSection">
+    <section class="SportTechnologyFlex">
         <article id="article1">
             <h3>Virtual reality (VR)</h3>
             <p>
@@ -74,85 +73,26 @@
                 also could use it for sports to have a more fun experience. The user also, has some controls to maybe
                 play themselves some.
             </p>
-            <a class="link"
-                href="https://www.amazon.nl/BOBOVR-Pro-Magnetische-Lichtgewicht-Vervangbare/dp/B09JNR4Y15/ref=asc_df_B09JNR4Y15/?tag=nlshogostdde-21&linkCode=df0&hvadid=572312164719&hvpos=&hvnetw=g&hvrand=17468742482694319792&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9064408&hvtargid=pla-1586778893459&psc=1">
-                <img id="articleImage" src="img/vr.jpg" alt="a vr headset you can buy, from amazon"
-                    title="Virtual Reality">
-                <p>Order product</p>
-            </a>
+
 
             <p>
                 One of the sports where the VR headset really shines is American football, so have multiple NFL teams
                 implemented
                 VR training, to for example have a sharper vision or a better reaction time on an enemy attack.
             </p>
-        </article>
 
-        <article id="article2">
-            <h3>Sleep Tracking</h3>
-            <p>
-                Sleep tracking is probably as simple as what you were thinking, tracking your sleep.
-            </p>
-            <p>
-                Athletes always do this as well, to maybe prevent an injury because they were to tired or maybe to even
-                know if its a good idea to join in on the sport at that moment.
-            </p>
-            <p>
-                Athletes want to estimate if their reaction time will be at their peak, studies have also proven that
-                less sleep means that their overall performance decreases by a bit.
-            </p>
-            <p>
-                The sleep is usually tracked by something as simple as a watch or a wristband. These things have been
-                developed so much that they can track your different stages of sleep. This is done by tracking your
-                heart rate and your movements while sleeping.
-            </p>
-            <a class="link"
-                href="https://z10electro.com/product/honor-watch-gs-pro-smart-watch-sleep-tracker-heart-rate-monitor/?srsltid=AR5OiO1w-UemiZbNXVMpZnX6v4_U1AhHUAhgt2bD-kFFfkkyCUFFwWx5ULs">
-                <img id="articleImage" src="img/watch.jpg"
-                    alt="a watch where you can track your sleep on, from z10electro" title="SleepTrackerWatch">
-                <p>Order product</p>
+            <a class="image"
+                href="https://www.amazon.nl/BOBOVR-Pro-Magnetische-Lichtgewicht-Vervangbare/dp/B09JNR4Y15/ref=asc_df_B09JNR4Y15/?tag=nlshogostdde-21&linkCode=df0&hvadid=572312164719&hvpos=&hvnetw=g&hvrand=17468742482694319792&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9064408&hvtargid=pla-1586778893459&psc=1">
+                <p id="order">Order product</p>
+                <img id="articleImage" src="img/vr.jpg" alt="a vr headset you can buy, from amazon"
+                    title="Virtual Reality">
             </a>
         </article>
-
-        <article id="article3">
-            <h3>Movement Tracking</h3>
-            <p>
-                Movement tracking is just as it says as well, it tracks someones movement. In sports this will be most
-                of the time the Athletes
-            </p>
-            <p>
-                This can be used really well, the life of sport coaches has been made a lot easier because of this,
-                because these people do not have to watch the athlete really well the entire time in the moment.
-            </p>
-            <p>
-                tracking movement is usually done with computers alongside some devices to catch the movement like a
-                wearable device or accessoires attached to sporting clothes and other stuff.
-                When the information gets send to the computer the coaches can easily break down their movement and tell
-                the athlete what is going well and what can be improved.
-            </p>
-            <p>
-                Tracking movement can also be used to maybe find stuff that the athlete is doing in a bad way before it
-                will become a big problem in their life, like maybe they throw the ball in a weird way that can hurt
-                their muscle in the long run.
-            </p>
-            <p>
-                So basically this is best used to prevent injuries and signicant downtime before they actually happen
-            </p>
-            <a class="link"
-                href="https://eu.shop.statsports.com/products/ladies-apex-athlete-series-gps-performance-tracker?currency=EUR&variant=39986165710936&utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping&srsltid=AR5OiO09Pj3RNKxiYwENAdGASiBWAZiZipcqdvIko2dWTgvgk_1_0rRrkbw">
-                <img id="articleImage" src="img/movement.jpg"
-                    alt="a small shirt where you can track your movement with from statsports"
-                    title="GPS performance tracker">
-                <p>Order product</p>
-            </a>
-        </article>
-        <footer class="LinkToSite">
-            <a href="https://reflexion.co/blog/sports-performance-technology/">
-                <footer>More information about sport</footer>
-                technologies
-            </a>
-        </footer>
     </section>
+
+
+
+
 </body>
 
 </html>
