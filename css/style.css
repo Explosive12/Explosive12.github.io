@@ -178,6 +178,67 @@ td {
     ;
 }
 
+/*Contact*/
+
+#contact {
+    color: #FFF;
+    background-color: #dc143c;
+
+    grid-area: contact;
+}
+
+#Large-Nav-Contact {
+    grid-area: navig;
+}
+
+#Contact-Info {
+    grid-area: info;
+}
+
+#Grid-Contact-Image1 {
+    grid-area: contacti1;
+}
+
+#Grid-Contact-Image2 {
+    grid-area: contacti2;
+
+}
+
+.image-Contact {
+    width: 100px;
+    height: 100px;
+}
+
+#Grid-Contact-Image3 {
+    grid-area: contacti3;
+}
+
+.Contact-Grid {
+    background-color: #ff7f50;
+    color: #000;
+    padding: 10px;
+
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: grid;
+    grid-template:
+        'head head head' auto
+        'head head head' auto
+        'head head head' auto
+        'navig navig navig' auto
+        'info info info' auto
+        'contact contact contacti1' auto
+        'contact contact contacti1' auto
+        'contact contact contacti2' auto
+        'contact contact contacti3' auto
+        'footer footer footer' auto
+        /40% 35% 25%
+    ;
+}
+
+
 /**FLEX**/
 
 
@@ -428,6 +489,31 @@ td {
             'copy copy ' auto
             'priceimage2 priceimage3' auto
             'priceimage2 priceimage3' auto
+            'footer footer' auto
+            /50% 50%
+        ;
+    }
+
+    .Contact-Grid {
+        background-color: #ff7f50;
+        color: #000;
+        padding: 10px;
+
+        font-size: 16px;
+        line-height: 1.6;
+        font-family: Arial, Helvetica, sans-serif;
+
+        display: grid;
+        grid-template:
+            'head head' auto
+            'head head' auto
+            'head head' auto
+            'navig navig' auto
+            'info info' auto
+            'contact contacti1' auto
+            'contact contacti1' auto
+            'contact contacti2' auto
+            'contact contacti3' auto
             'footer footer' auto
             /50% 50%
         ;
@@ -715,6 +801,35 @@ td {
             'priceimage3 priceimage3' auto
             'footer footer' auto
             /50% 50%
+        ;
+    }
+
+    .Contact-Grid {
+        background-color: #ff7f50;
+        color: #000;
+        padding: 10px;
+
+        font-size: 16px;
+        line-height: 1.6;
+        font-family: Arial, Helvetica, sans-serif;
+
+        display: grid;
+        grid-template:
+            'head head' auto
+            'head head' auto
+            'head head' auto
+            'info info' auto
+            'contact contact' auto
+            'contact contact' auto
+            'contact contact' auto
+            'contact contact' auto
+            'contact contact' auto
+            'contacti1 contacti1' auto
+            'contacti1 contacti1' auto
+            'contacti2 contacti2' auto
+            'contacti3 contacti3' auto
+            'footer footer' auto
+            /66% 34%
         ;
     }
 }
