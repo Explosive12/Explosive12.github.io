@@ -5,25 +5,26 @@
     <meta charset="utf-8">
     <meta name="author" content="Julian Kiesewetter">
     <meta name="description" content="EindProject WebMarkup">
-    <link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+    <meta name="keywords" content="Julian, Kiesewetter, Webpage, Webpagina, Eindproject, Sport, Technologies">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" href="img/gabbroFlav.jpg">
     <title> Pricing </title>
 </head>
 
-<body>
+<body class=Pricing-Grid>
 
-    <header class="TopPage">
+    <header class="TopPage" id="GridHead">
 
-        <img src="img/gabbroFlav.jpg" alt="Gabbro on giants deep playing a flute" title="FluteNoises" id="Logo">
+        <img src="img/gabbroFlav.jpg" alt="Gabbro on giants deep playing a flute" title="FluteNoises" id="LogoFlex">
         <h1> Gabbro Technologies </h1>
         <h2>Looking amazing</h2>
     </header>
 
-    <!-- phone hamburger (1) -->
+    <!-- phone hamburger (2) -->
     <nav id="flexSmallNav">
         <label>
             <input type="checkbox">
-            <span class="square"> <span class="button"></span> </span>
+            <span class="square-Grid"> <span class="button-Grid"></span> </span>
             <ul class=menu>
                 <li> <a id=menu href="index.html">Home</a> </li>
                 <li> <a id=menu href="product.html">Product</a> </li>
@@ -32,8 +33,8 @@
         </label>
     </nav>
 
-    <!-- Large screen Nav (1)-->
-    <nav id="flexLargeNav">
+    <!-- Large screen Nav (2)-->
+    <nav id="PriceLargeNav">
         <label>
             <ul class=menu>
                 <li> <a id=menu href="index.html">Home</a> </li>
@@ -42,6 +43,42 @@
             </ul>
         </label>
     </nav>
+
+
+    <article id="price-Innovation">
+        <p>Innovation!</p>
+    </article>
+    <!--Table with prices(3)-->
+    <table class=Pricing-Table-Grid>
+        <tr>
+            <th>&nbsp;</th>
+            <th>Originele VR BOX 2.0 Virtual Reality-bril</th>
+            <th>Meta Quest 2 256GB</th>
+            <th>Royole Moon 3D mobiel theater - wit</th>
+        </tr>
+        <tr>
+            <td><em>Price</em></td>
+            <td>&euro; 299.00 </td>
+            <td>&euro; 16.95</td>
+            <td>&euro; 549.00</td>
+        </tr>
+
+        <!--Copyright info (3)-->
+        <footer id="source">Source of date &copy; 2022</footer>
+        <!--(4) aside images-->
+
+        <aside id="Grid-Price-Image1"><img class=image-Product src="img/vr.jpg"></aside>
+        <aside id="Grid-Price-Image2"><img class=image-Product src="img/VRImage2.jpg"></aside>
+        <aside id="Grid-Price-Image3"><img class=image-Product src="img/VRImage3.jpg"></aside>
+    </table>
+
+    <!-- copyright (5)-->
+    <footer id="author-Product">
+        <b><em>&copy; Julian Kiesewetter</em></b>
+    </footer>
+
+    <!--Cookie (6)-->
+    <footer id="cookie-statement">Cookie statement</footer>
 
 </body>
 
