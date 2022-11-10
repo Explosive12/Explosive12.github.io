@@ -8,6 +8,18 @@ body {
 
 .TopPage {
     color: #0a0;
+    word-spacing: 5px;
+}
+
+.active.search {
+    color:#00f;
+}
+.search:visited{
+    color:#f00;
+}
+
+.search:hover{
+    color:#dcdcdc;
 }
 
 /**GRID**/
@@ -112,10 +124,16 @@ body {
 /*PRICING PAGE*/
 
 
+table {
+    border-collapse: collapse;
+    margin: 25px;
+    min-width: 400px;
+}
 
 .Pricing-Table-Grid {
     border: 4px double #ffc72b;
-    border-collapse: collapse;
+    border-collapse: collapse 4px solid #fff;
+    min-width: 20px;
     grid-area: table;
 }
 
@@ -123,10 +141,25 @@ body {
     grid-area: price-article;
 }
 
+.green {
+    background-color: #0e0;
+}
+
+.blue {
+    background-color: #00f;
+    color: #dcdcdc
+}
+
+.light {
+    background-color: #0ff;
+}
+
 th,
 td {
     width: 25%;
-    text-align: center;
+    text-align: left;
+    margin-left: 5px;
+
 }
 
 #PriceLargeNav,
@@ -144,6 +177,7 @@ td {
 }
 
 #Grid-Price-Image3 {
+    display: block;
     grid-area: priceimage3;
 }
 
@@ -176,7 +210,7 @@ td {
         'table table priceimage3' auto
         'copy copy copy' auto
         'footer footer footer' auto
-        /40% 35% 25%
+        /45% 40% 15%
     ;
 }
 
@@ -559,6 +593,7 @@ td {
 
     .menu {
         list-style: none;
+        text-indent: 100px;
     }
 
     .search {
@@ -567,7 +602,6 @@ td {
         flex: 33%;
 
         display: flex;
-        color: #000;
         font-style: normal;
         font-size: 24px;
         border: #b22222 solid;
@@ -580,16 +614,15 @@ td {
         max-height: 0px;
     }
 
-    #flexSmallNav search {
+    #flexSmallNav .search {
         display: flex;
         padding: 25px;
-        color: #dcdcdc
     }
 
-    #flexSmallNav search:hover {
+    #flexSmallNav .search:hover {
         display: block;
         padding: 25px;
-        color: #f00;
+        color: #dcdcdc;
     }
 
     .iconh {
@@ -700,6 +733,8 @@ td {
 
     .menu {
         list-style: none;
+        text-indent: 1px;
+
     }
 
     .search {
@@ -707,7 +742,6 @@ td {
         padding: 10px;
 
         display: block;
-        color: #000;
         font-style: normal;
         font-size: 24px;
         border: #b22222 solid;
@@ -720,21 +754,20 @@ td {
         max-height: 0px;
     }
 
-    #flexSmallNav search {
+    #flexSmallNav .search {
         display: flex;
         padding: 25px;
-        color: #dcdcdc
     }
 
-    #flexSmallNav search:hover {
+    #flexSmallNav .search:hover {
         display: block;
         padding: 25px;
-        color: #f00;
+        color: #dcdcdc;
     }
 
     .iconh-grid {
         cursor: pointer;
-        display: flex;
+        display: block;
         position: fixed;
         flex-direction: row-reverse;
         padding: 20px 20px;
@@ -744,7 +777,7 @@ td {
     .lines-grid {
         background-color: #FFF;
         position: relative;
-        display: flex;
+        display: block;
 
         height: 3px;
         width: 25px;
@@ -754,7 +787,7 @@ td {
     .lines-grid::after {
         background-color: #fff;
         content: "";
-        display: flex;
+        display: block;
         position: absolute;
 
         height: 100%;
@@ -790,7 +823,7 @@ td {
         font-family: Arial, Helvetica, sans-serif;
         padding: 10px;
         background-color: #b22222;
-        border: solid 5px #ff0;
+        border: double 5px #ff0;
 
         display: grid;
         grid-gap: 10px;
@@ -815,7 +848,7 @@ td {
             'aside3 aside3' auto
             'footer footer' auto
             'footer footer' auto
-            /75% 25%;
+            /65 35%;
 
     }
 
@@ -833,13 +866,12 @@ td {
         grid-template:
             'head navi' auto
             'head navi' auto
-            'navi navi' auto
             'table table' auto
             'table table' auto
             'table table' auto
             'table table' auto
             'table table' auto
-            'copy copy ' auto
+            'copy copy' auto
             'priceimage1 priceimage1' auto
             'priceimage2 priceimage2' auto
             'priceimage3 priceimage3' auto
