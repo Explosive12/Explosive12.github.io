@@ -379,10 +379,8 @@ td {
 }
 
 
-
-
 /**PC en tabblad**/
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 481px) {
 
     #flexSmallNav,
     #side-grid,
@@ -395,7 +393,7 @@ td {
 }
 
 /**Tablet**/
-@media screen and (min-width: 720px) and (max-width: 929px) {
+@media screen and (min-width: 481px) and (max-width: 1279px) {
 
     .upcomingRoutes {
 
@@ -405,9 +403,7 @@ td {
         padding: 10px;
         top: 100px;
 
-
         background-color: #FA0;
-
 
         order: 3;
     }
@@ -550,7 +546,7 @@ td {
 }
 
 /**Phone**/
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 480px) {
 
     #price-Innovation,
     #LogoFlex,
@@ -558,8 +554,6 @@ td {
     #flexLargeNav {
         display: none
     }
-
-
 
     /**Hamburger menu FLEX**/
 
@@ -646,11 +640,6 @@ td {
     #side:checked~#flexSmallNav .iconh {
         background: transparent;
     }
-
-
-
-
-
 
     #promotionVideo {
         display: none;
@@ -884,7 +873,7 @@ td {
             'contacti2 contacti2' auto
             'contacti3 contacti3' auto
             'footer footer' auto
-            /66% 34%
+            /70% 30%
         ;
     }
 }
