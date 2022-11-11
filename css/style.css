@@ -11,11 +11,13 @@ body {
     word-spacing: 5px;
 }
 
-.active.search {
+
+.search:visited{
     color:#00f;
 }
-.search:visited{
-    color:#f00;
+
+.active.search {
+    color:#ff0;
 }
 
 .search:hover{
@@ -132,7 +134,7 @@ table {
 
 .Pricing-Table-Grid {
     border: 4px double #ffc72b;
-    border-collapse: collapse 4px solid #fff;
+    border-collapse: collapse;
     min-width: 20px;
     grid-area: table;
 }
@@ -670,10 +672,6 @@ td {
         max-height: 100%;
     }
 
-    #side:checked~#flexSmallNav .iconh {
-        background: transparent;
-    }
-
     #promotionVideo {
         display: none;
     }
@@ -810,9 +808,7 @@ td {
         max-height: 100%;
     }
 
-    #side-grid:checked~#flexSmallNav .iconh-grid {
-        background: transparent;
-    }
+
 
     /**GRID PRODUCT**/
 
@@ -848,7 +844,7 @@ td {
             'aside3 aside3' auto
             'footer footer' auto
             'footer footer' auto
-            /65 35%;
+            /65% 35%;
 
     }
 
