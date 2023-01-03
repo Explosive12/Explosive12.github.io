@@ -17,13 +17,22 @@ body {
 }
 
 
-.search:visited{
+.search:visited, .search:link{
     color:#00f;
+}
+
+
+.search::first-letter{
+    text-transform: uppercase;
 }
 
 
 .active.search {
     color:#ff0;
+}
+
+.search:target{
+    color: #adffad;
 }
 
 
@@ -137,11 +146,29 @@ body {
 
 
 table {
+
     border-collapse: collapse;
     margin: 25px;
     min-width: 400px;
     text-transform: uppercase;
 }
+
+tr:nth-child(even)
+{
+    background-color: #CFF;
+}
+
+tr:nth-child(odd)
+{
+    background-color: #fff;
+}
+
+tr:first-child
+{
+    color: #ff0;
+}
+
+
 
 .Pricing-Table-Grid {
     border: 4px double #ffc72b;
