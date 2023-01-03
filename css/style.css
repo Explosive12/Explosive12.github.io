@@ -168,6 +168,10 @@ tr:first-child
     color: #ff0;
 }
 
+a:link
+{
+    background-color: #dcdccc;
+}
 
 
 .Pricing-Table-Grid {
