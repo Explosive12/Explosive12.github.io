@@ -7,13 +7,13 @@ body {
     background: #000;
     padding: 10px;
     letter-spacing: 2px;
-    font-family: 'Notable';
-    
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .TopPage {
     color: #0a0;
     word-spacing: 5px;
+    font-family: 'Notable'
 }
 
 
